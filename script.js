@@ -57,3 +57,19 @@ else if (disco == "900") {
 else if (disco == "1380") {
     total+= 1380;
 }
+
+if (document.querySelector('input[value="200"]').checked) {
+        total += 200; // Mouse
+    }
+    if (document.querySelector('input[value="300"]').checked) {
+        total += 300; // Teclado
+    }
+    if (document.querySelector('input[value="400"]').checked) {
+        total += 400; // Bocinas
+    }
+    if (document.querySelector('input[value="600"]').checked) {
+        total += 600; // Webcam
+    }
+    if (document.querySelector('input[value="1200"]').checked) {
+        total += 1200; // UPS
+    }
