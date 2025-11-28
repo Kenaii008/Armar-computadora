@@ -8,86 +8,85 @@
 <body>
     <header></header>
         <h1>Armar computadora</h1>
+        <p class="sub">Diseña y crea tu propia computadora gamer.</p>
     </header>
     <form>
-       <div>
-        <label for="Gabinete">
-            Gabinete:
-            <select id="Gabinete" name="Gabinete">
-                <option value="Minitorre">Minitorre</option>
-                <option value="Torre ">Torre</option>
-                <option value="Desktop ">Desktop</option>
-                <option value="Gamer">Gamer</option>
-            </select>
-        </label>
-       </div>
-       <div>
-        <label for="Procesador">
-            Procesador:
-            <select id="Procesador" name="Procesador">
-                <option value="Celeron">Celeron</option>
-                <option value="Intel i3">Intel i3</option>
-                <option value="Intel i5">Intel i5</option>
-                <option value="Intel i7">Intel i7</option>
-            </select>
-        </label>
-       </div>
-       <div>
-        <label for="Disco duro">
-            Disco duro:
-            <select name="Disco duro" id="Disco duro">
-                <option value="500GB">500GB</option>
-                <option value="750GB">750GB</option>
-                <option value="1TB">1TB</option>
-                <option value="250 GB SSD">250 GB SSD</option>
-                <option value="500 GB SSD">500 GB SSD</option>
-            </select>
-        </label>
-       </div>
-       <div>
-        <label for="Memoria RAM">
-            Memoria RAM:
-            <select name="Memoria RAM" id="Memoria RAM">
-                <option value="4GB">4GB</option>
-                <option value="8GB">8GB</option>
-                <option value="16GB">16GB</option>
-            </select>
-        </label>
-       </div>
-       <div>
-        <label for="Monitor">
-            Monitor:
-            <select name="Monitor" id="Monitor">
-                <option value="19 pulgadas">19 pulgadas</option>
-                <option value="21.5 pulgadas">21.5 pulgadas</option>
-                <option value="24 pulgadas">24 pulgadas</option>
-                <option value="27 pulgadas">27 pulgadas</option>
-                <option value="32 pulgadas">32 pulgadas</option>
-            </select>
-        </label>
+       <div class="Pc">
+        <div>
+        <label for="gabinete">Gabinete:</label>
+        <select id="gabinete" name="gabinete">
+            <option value="700">Minitorre — $700</option>
+            <option value="1200">Torre — $1200</option>
+            <option value="550">Desktop — $550</option>
+            <option value="2500">Gamer — $2500</option>
+        </select>
        </div>
 
        <div>
-        <label>ACCESORIOS</label>
-        <div class="checkbox-grupo">
-            <label><input type="checkbox" id="mouse">Mouse</label>
-            <label><input type="checkbox" id="teclado">Teclado</label>
-            <label><input type="checkbox" id="bocinas">Bocinas</label>
-            <label><input type="checkbox" id="monitor">Monitor</label>
-            <label><input type="checkbox" id="webcam">Webcam</label>
-            <label><input type="checkbox" id="audifonos">Audifonos</label>
-            <label><input type="checkbox" id="silla gamer">Silla Gamer</label>
-            <label><input type="checkbox" id="microfono">Micrófono</label>
-            <label><input type="checkbox" id="refrigeracion-liquida">Refrigeracion-liquida</label>
-            <label><input type="checkbox" id="Cable HDMI">Cable HDMI</label>
-            <label><input type="checkbox" id="Adaptador WiFi">Adaptador WiFi</label>
-            <label><input type="checkbox" id="alfombrilla">Alfombrilla</label>
-            <label><input type="checkbox" id="Lector SD">Lector SD</label>
-            <label><input type="checkbox" id="Caja de herramientas">Caja de herramientas</label>
-            <label><input type="checkbox" id="Soporte">Soporte</label>
-            <label><input type="checkbox" id="Monitor adicional">Monitor adicional</label>
-            <label><input type="checkbox" id="Ventilador">Ventilador</label>
-            <label><input type="checkbox" id="Escritorio">Escritorio</label>
+        <label for="procesador">Procesador:</label>
+        <select id="procesador" name="procesador">
+            <option value="900">Celeron — $900</option>
+            <option value="1500">Intel i3 — $1500</option>
+            <option value="3500">Intel i5 — $3500</option>
+            <option value="5000">Intel i7 — $5000</option>
+        </select>
+       </div>
+
+       <div>
+        <label for="disco">Disco duro:</label>
+        <select id="disco" name="disco">
+            <option value="500">500GB — $500</option>
+            <option value="800">750GB — $800</option>
+            <option value="1000">1TB — $1000</option>
+            <option value="900">250 GB SSD — $900</option>
+            <option value="1380">500 GB SSD — $1380</option>
+        </select>
+       </div>
+
+       <div>
+        <label for="ram">Memoria RAM:</label>
+        <select id="ram" name="ram">
+            <option value="600">4 GB — $600</option>
+            <option value="1050">8 GB — $1050</option>
+            <option value="1950">16 GB — $1950</option>
+        </select>
+       </div>
+
+       <div>
+        <label for="monitor">Monitor (tamaño):</label>
+        <select id="monitor" name="monitor">
+            <option value="2000">17" — $2000</option>
+            <option value="2500">19" — $2500</option>
+            <option value="3500">21.5" — $3500</option>
+            <option value="4500">24" — $4500</option>
+            <option value="6500">27" — $6500</option>
+            <option value="9000">32" — $9000</option>
+        </select>
+       </div>
+
+       <div>
+        <label>Accesorios (puedes elegir varios):</label>
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="accesorio" value="200">Mouse — $200</label>
+            <label><input type="checkbox" name="accesorio" value="300">Teclado — $300</label>
+            <label><input type="checkbox" name="accesorio" value="400">Bocinas — $400</label>
+            <label><input type="checkbox" name="accesorio" value="600">Webcam — $600</label>
+            <label><input type="checkbox" name="accesorio" value="1200">UPS — $1200</label>
+            <label><input type="checkbox" name="accesorio" value="100">Alfombrilla — $100</label>
+            <label><input type="checkbox" name="accesorio" value="800">Control Gamer — $800</label>
+            <label><input type="checkbox" name="accesorio" value="250">Luz RGB — $250</label>
+            <label><input type="checkbox" name="accesorio" value="3500">Silla Gamer — $3500</label>
+            <label><input type="checkbox" name="accesorio" value="450">Adaptador WiFi — $450</label>
+            <label><input type="checkbox" name="accesorio" value="180">Hub USB — $180</label>
+            <label><input type="checkbox" name="accesorio" value="700">Audífonos — $700</label>
+            <label><input type="checkbox" name="accesorio" value="4000">Monitor adicional — $4000</label>
+            <label><input type="checkbox" name="accesorio" value="220">Soporte — $220</label>
+            <label><input type="checkbox" name="accesorio" value="180">Ventilador — $180</label>
+            <label><input type="checkbox" name="accesorio" value="300">Micrófono — $300</label>
+            <label><input type="checkbox" name="accesorio" value="120">Lector SD — $120</label>
+            <label><input type="checkbox" name="accesorio" value="90">Cable HDMI — $90</label>
+            <label><input type="checkbox" name="accesorio" value="250">Base refrigerante — $250</label>
+            <label><input type="checkbox" name="accesorio" value="150">Caja de herramientas — $150</label>
         </div>
        </div>
     </form>
