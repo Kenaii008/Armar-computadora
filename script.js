@@ -56,6 +56,30 @@ else if (disco == "1380") {
     total+= 1380;
 }
 
+var ram = document.getElementById("ram").value;
+    if (ram == "600") {
+        total += 600;
+    } else if (ram == "1050") {
+        total += 1050;
+    } else if (ram == "1950") {
+        total += 1950;
+    }
+
+var monitor = document.getElementById("monitor").value;
+    if (monitor == "2000") {
+        total += 2000;
+    } else if (monitor == "2500") {
+        total += 2500;
+    } else if (monitor == "3500") {
+        total += 3500;
+    } else if (monitor == "4500") {
+        total += 4500;
+    } else if (monitor == "6500") {
+        total += 6500;
+    } else if (monitor == "9000") {
+        total += 9000;
+    }
+
 if (document.querySelector('input[value="200"]').checked) {
         total += 200; // Mouse
     }
