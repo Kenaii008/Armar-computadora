@@ -56,3 +56,21 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+#calcular {
+    background-color: #4CAF50;
+    color: white; 
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
