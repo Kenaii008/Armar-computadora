@@ -1,6 +1,6 @@
 function calcular() {
     var total=0;
-    var gabinete = document.getElementsById("gabinete").value;
+    var gabinete = document.getElementById("gabinete").value;
 
 if (gabinete == "700") {
     total+= 700;
@@ -9,14 +9,15 @@ if (gabinete == "700") {
 else if (gabinete == "1200") {
     total+= 1200;
 }
-else if (gabinete == "500") {
+else if (gabinete == "550") {
     total+=550;
 }
 else if (gabinete == "2500") {
     total+= 2500;
 }
 
-var procesador = document.getElementsById("procesador").value;
+var procesador = document.getElementById("procesador").value;
+
 
 if (procesador == "900") {
     total+= 900;
