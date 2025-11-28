@@ -1,8 +1,6 @@
 function calcular() {
     var total=0;
-}
-
-var gabinete = document.getElementsById("gabinete").value;
+    var gabinete = document.getElementsById("gabinete").value;
 
 if (gabinete == "700") {
     total+= 700;
@@ -73,3 +71,55 @@ if (document.querySelector('input[value="200"]').checked) {
     if (document.querySelector('input[value="1200"]').checked) {
         total += 1200; // UPS
     }
+    if (document.querySelector('input[value="100"]').checked) {
+        total += 100; // Alfombrilla
+    }
+    if (document.querySelector('input[value="800"]').checked) {
+        total += 800; // Control Gamer
+    }
+    if (document.querySelector('input[value="250"]').checked) {
+        total += 250; // Luz RGB
+    }
+    if (document.querySelector('input[value="3500"]').checked) {
+        total += 3500; // Silla Gamer
+    }
+    if (document.querySelector('input[value="450"]').checked) {
+        total += 450; // Adaptador WiFi
+    }
+    if (document.querySelector('input[value="180"]').checked) {
+        total += 180; // Hub USB
+    }
+    if (document.querySelector('input[value="700"]').checked) {
+        total += 700; // Audífonos
+    }
+    if (document.querySelector('input[value="4000"]').checked) {
+        total += 4000; // Monitor adicional
+    }
+    if (document.querySelector('input[value="220"]').checked) {
+        total += 220; // Soporte
+    }
+    if (document.querySelector('input[value="180"]').checked) {
+        total += 180; // Ventilador
+    }
+    if (document.querySelector('input[value="300"]').checked) {
+        total += 300; // Micrófono
+    }
+    if (document.querySelector('input[value="120"]').checked) {
+        total += 120; // Lector SD
+    }
+    if (document.querySelector('input[value="90"]').checked) {
+        total += 90; // Cable HDMI
+    }
+    if (document.querySelector('input[value="250"]').checked) {
+        total += 250; // Base refrigerante
+    }
+    if (document.querySelector('input[value="150"]').checked) {
+        total += 150; // Caja de herramientas
+    }
+
+    alert("El total de la PC es: $" + total + " MXN");
+
+}
+
+document.getElementById("calcular").addEventListener("click", calcular);
+
